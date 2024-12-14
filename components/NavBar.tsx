@@ -1,26 +1,33 @@
 "use client";
 
+import { useState } from 'react';
 import Link from 'next/link';
+import styles from '../styles/Navbar.module.css';
 
-const NavBar = () => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="w-full bg-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-4">
-        <div className="text-2xl font-bold text-blue-600">
-          <Link href="/" className="text-gray-600 hover:text-blue-800 transition">
-          View Me
-          </Link>
-        </div>
-        <div className="space-x-4">
-          <a href="/tours" className="text-gray-700 hover:text-blue-600 transition">Our tours</a>
-          <a href="/about" className="text-gray-700 hover:text-blue-600 transition">About us</a>
-          <a href="/booking" className="text-gray-700 hover:text-blue-600 transition">Booking</a>
-          <a href="/faq" className="text-gray-700 hover:text-blue-600 transition">FAQ</a>
-        </div>
-        <button className="menu-button">&#9776;</button>
+    <nav className={styles.navbar}>
+      <div className={`${styles.logo} ${isOpen ? styles.hidden : ''}`}>
+        <Link href="/">ViewMe</Link>
       </div>
+      
+      <div className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/destinations">Destinations</Link></li>
+        <li><Link href="/tours">Tours</Link></li>
+        <li><Link href="/about">About</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
+      </ul>
     </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
