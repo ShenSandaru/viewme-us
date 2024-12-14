@@ -1,0 +1,135 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 6rem; /* Add top padding to avoid header overlap */
+  background-color: #f0f4f8; /* Light gray background */
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 3rem; /* Larger font size for the title */
+  font-weight: bold;
+  color: #2c3e50; /* Darker gray for the title */
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.5rem; /* Slightly larger font size for the subheading */
+  color: #34495e; /* Darker gray for the subheading */
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #4CAF50; /* Custom green color */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #388E3C; /* Darker green color */
+}
+
+.introductionSection,
+.achievementsSection,
+.missionSection,
+.callToActionSection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50; /* Darker gray for the subtitle */
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #34495e; /* Darker gray for the text */
+  margin-bottom: 1.5rem;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+}
+
+.achievement {
+  text-align: center;
+}
+
+.achievementNumber {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4CAF50; /* Custom green color */
+}
+
+.achievementText {
+  font-size: 1.2rem;
+  color: #34495e; /* Darker gray for the text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; /* Adjusted font size for smaller screens */
+  }
+
+  .subheading {
+    font-size: 1.25rem; /* Adjusted font size for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 1.75rem; /* Adjusted font size for smaller screens */
+  }
+
+  .text {
+    font-size: 1.1rem; /* Adjusted font size for smaller screens */
+  }
+
+  .achievementNumber {
+    font-size: 2rem; /* Adjusted font size for smaller screens */
+  }
+
+  .achievementText {
+    font-size: 1.1rem; /* Adjusted font size for smaller screens */
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+  }
+}
