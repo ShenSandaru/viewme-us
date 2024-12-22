@@ -1,0 +1,65 @@
+/* ...existing code... */
+@import './Header.css';
+
+.main-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  /* ...existing styles... */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 20vh;
+}
+
+.scroll-button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 1;
+}
+
+.carousel-buttons button {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 15vh;
+  }
+
+  .scroll-button {
+    bottom: 5%;
+  }
+
+  .carousel-buttons {
+    bottom: 2%;
+  }
+}
+/* ...existing code... */

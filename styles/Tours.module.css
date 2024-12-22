@@ -1,0 +1,85 @@
+.tours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  padding-top: 80px;
+  background-color: #f0f4f8; /* Light gray background */
+}
+
+.title {
+  font-size: 3rem; /* Larger font size for the title */
+  font-weight: bold;
+  color: #2c3e50; /* Darker gray for the title */
+  margin-bottom: 1.5rem; /* Increased bottom margin */
+}
+
+.description {
+  font-size: 1.5rem; /* Slightly larger font size for the description */
+  color: #34495e; /* Darker gray for the description */
+  margin-bottom: 2.5rem; /* Increased bottom margin */
+  text-align: center;
+}
+
+.tourList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cardWrapper {
+  perspective: 1000px;
+}
+
+.card {
+  width: 280px; /* Increased width */
+  height: 360px; /* Increased height */
+  background-image: linear-gradient(163deg, #4CAF50 0%, #2E7D32 100%); /* Green gradient */
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  width: 280px; /* Increased width */
+  height: 360px; /* Increased height */
+  background-color: #ffffff; /* White background */
+  border-radius: 20px;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: #2c3e50; /* Dark gray text */
+  text-align: center;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(76, 175, 80, 0.3); /* Green shadow */
+}
+
+.tourImage {
+  width: 100%;
+  height: 180px; /* Increased height */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tourTitle {
+  font-size: 1.75rem; /* Increased font size */
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.tourDescription {
+  font-size: 1.2rem; /* Slightly increased font size */
+  color: #34495e; /* Dark gray for the description */
+}
