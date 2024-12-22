@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -5,7 +6,6 @@ import Link from 'next/link';
 import styles from '../../styles/Destination.module.css';
 import Navbar from '../../components/NavBar';
 import SearchBar from './SearchBar';
-import toursStyles from '../../styles/Tours.module.css'; // Import tours styles
 
 const fetchDestinations = async () => {
   // Simulate an API call
@@ -52,6 +52,7 @@ const fetchDestinations = async () => {
 export default function Destinations() {
   const [searchTerm, setSearchTerm] = useState('');
   const [destinations, setDestinations] = useState<{ title: string; description: string; imageSrc: string; slug: string; }[]>([]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const getDestinations = async () => {
@@ -69,11 +70,11 @@ export default function Destinations() {
   return (
     <>
       <Navbar />
-      <main className={`${styles.destination} ${toursStyles.mobileResponsive}`}> {/* Apply responsive class */}
+      <main className={styles.destination}>
         <h1 className={styles.title}>Our Destinations</h1>
         <p className={styles.description}>Explore our popular destinations.</p>
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <div className={`${styles.destinationList} ${toursStyles.gridResponsive}`}> {/* Apply responsive grid */}
+        <div className={styles.destinationList}>
           {filteredDestinations.map((destination, index) => (
             <div key={index} className={styles.cardWrapper}>
               <Link href={`/destinations/${destination.slug}`}>
