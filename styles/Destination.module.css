@@ -23,9 +23,6 @@
   text-align: center;
 }
 
-
-
-
 .destinationList {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +97,7 @@
 
   .destinationList {
     gap: 1rem;
+    flex-direction: column; /* Stack items vertically on tablets */
   }
 
   .cardWrapper {
@@ -108,6 +106,17 @@
 
   .cardTitle {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .card {
+    width: 100%; /* Make cards take full width on tablets */
+    height: auto; /* Adjust height accordingly */
+  }
+
+  .mapContainer {
+    width: 100%;
+    max-width: none;
+    margin-top: 1.5rem; /* Reduce top margin on tablets */
   }
 }
 
@@ -122,6 +131,7 @@
 
   .destinationList {
     gap: 0.5rem;
+    flex-direction: column; /* Stack items vertically on mobile */
   }
 
   .cardWrapper {
@@ -130,5 +140,19 @@
 
   .cardTitle {
     font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .destination {
+    padding: 1rem;
+    padding-top: 80px; /* Adjust this value based on the height of your navbar */
+  }
+
+  .card {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Adjust height */
+  }
+
+  .mapContainer {
+    margin-top: 1rem; /* Further reduce top margin on mobile */
   }
 }
