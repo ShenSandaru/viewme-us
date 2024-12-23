@@ -1,0 +1,144 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+}
+
+.formContainer {
+  width: 400px;
+  background: #ffffff;
+  border: 2px solid #28a745;
+  padding: 32px 24px;
+  font-size: 14px;
+  color: #333;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formHeading {
+  text-align: center;
+  color: #28a745;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.blinkingDot {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.formGroup label {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 96px;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #28a745;
+}
+
+.formSubmitBtn {
+  align-self: flex-start;
+  padding: 12px 24px;
+  color: #ffffff;
+  font-weight: 600;
+  background: #28a745;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.formSubmitBtn:hover {
+  background: #218838;
+}
+
+.confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.confirmationContent {
+  background: #ffffff;
+  border: 2px solid #28a745;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  color: #333;
+  animation: slideIn 0.3s ease-out;
+}
+
+.confirmationContent h3 {
+  color: #28a745;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

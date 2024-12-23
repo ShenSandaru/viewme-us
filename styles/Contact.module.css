@@ -1,0 +1,66 @@
+.container {
+  max-width: 600px;
+  margin: 80px auto 0; /* Added top margin to create space from the navbar */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333333;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.container button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.container button:hover {
+  background-color: #218838;
+}
