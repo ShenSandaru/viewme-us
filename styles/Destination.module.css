@@ -16,11 +16,16 @@
   margin-bottom: 1.5rem; /* Increased bottom margin */
 }
 
-.description {
-  font-size: 1.5rem; /* Slightly larger font size for the description */
-  color: #34495e; /* Darker gray for the description */
-  margin-bottom: 2.5rem; /* Increased bottom margin */
-  text-align: center;
+.searchBar {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #2c3e50;
 }
 
 .destinationList {
@@ -37,27 +42,22 @@
 .card {
   width: 280px; /* Increased width */
   height: 360px; /* Increased height */
-  background-color: #ffffff; /* White background */
+  background: linear-gradient(135deg, #ffffff, #f0f4f8); /* Gradient background */
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-10px); /* Lift effect */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow */
-}
-
-.cardContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  color: #2c3e50; /* Dark gray text */
-  text-align: center;
 }
 
 .destinationImage {
@@ -77,6 +77,7 @@
 .cardDescription {
   font-size: 1.2rem; /* Slightly increased font size */
   color: #34495e; /* Dark gray for the description */
+  margin: 0.5rem 1rem;
 }
 
 .mapContainer {
@@ -91,21 +92,13 @@
     font-size: 2rem;
   }
 
-  .description {
-    font-size: 1.25rem;
+  .searchBar {
+    max-width: 100%;
   }
 
   .destinationList {
     gap: 1rem;
     flex-direction: column; /* Stack items vertically on tablets */
-  }
-
-  .cardWrapper {
-    max-width: 100%;
-  }
-
-  .cardTitle {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
 
   .card {
@@ -125,17 +118,13 @@
     font-size: 1.5rem;
   }
 
-  .description {
-    font-size: 1rem;
+  .searchBar {
+    max-width: 100%;
   }
 
   .destinationList {
     gap: 0.5rem;
     flex-direction: column; /* Stack items vertically on mobile */
-  }
-
-  .cardWrapper {
-    max-width: 100%;
   }
 
   .cardTitle {
@@ -156,3 +145,4 @@
     margin-top: 1rem; /* Further reduce top margin on mobile */
   }
 }
+
