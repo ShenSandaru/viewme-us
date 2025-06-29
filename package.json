@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "cd FrontEnd && npm run dev",
+
     "build": "cd FrontEnd && npm run build",
+
     "start": "cd FrontEnd && npm run start"
   },
   "dependencies": {
