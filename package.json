@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "cd FrontEnd && npm run dev",
-
-
-    "build": "cd FrontEnd && npm run build",
-
-    "start": "cd FrontEnd && npm run start"
+    "build": "cd FrontEnd && npm install && npm run build",
+    "start": "cd FrontEnd && npm run start",
+    "install": "cd FrontEnd && npm install"
   },
   "dependencies": {
-    "next": "^14.0.0"  
+    "next": "^14.0.0"
   }
 }
