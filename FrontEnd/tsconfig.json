@@ -23,13 +23,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@/styles/*": ["./styles/*"],
-      "@/components/*": ["./components/*"],
-      "@/app/*": ["./app/*"],
-      "@/lib/*": ["./lib/*"],
-      "@/utils/*": ["./utils/*"],
-      "@/types/*": ["./types/*"]
+      "@/*": ["./src/*"]
     },
     "target": "ES2017"
   },

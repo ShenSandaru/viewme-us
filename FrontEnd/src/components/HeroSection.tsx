@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/HeroSection.module.css';
+import styles from '@/styles/HeroSection.module.css';
 
 const HeroSection = () => {
   return (

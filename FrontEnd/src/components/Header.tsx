@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import '../styles/Header.module.css';
+import '@/styles/Header.module.css';
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);

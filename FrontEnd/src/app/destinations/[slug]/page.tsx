@@ -1,8 +1,9 @@
 "use client";
 import { useRouter, useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import styles from '../../../styles/DestinationDetail.module.css';
-import { destinations, Destination } from '../../data/destinations';
+import styles from '@/styles/DestinationDetail.module.css';
+import { Destination } from '@/data/destinations';
+import { destinationService } from '@/services/destinationService';
 
 export default function DestinationDetail() {
   const router = useRouter();
@@ -11,9 +12,12 @@ export default function DestinationDetail() {
 
   useEffect(() => {
     const { slug } = params;
-    const foundDestination = destinations.find((dest) => dest.id === slug);
-    if (foundDestination) {
-      setDestination(foundDestination);
+    if (slug) {
+      destinationService.getById(slug as string).then((foundDestination) => {
+        if (foundDestination) {
+          setDestination(foundDestination);
+        }
+      });
     }
   }, [params]);
 
