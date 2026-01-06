@@ -64,7 +64,7 @@ export default function LoginPage() {
                   id="fullName"
                   name="fullName"
                   label="Full name"
-                  placeholder="Amélie Laurent" // Placeholder from image
+                  placeholder="John Doe"
                   value={formData.fullName}
                   onChange={handleChange}
                 />
