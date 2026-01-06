@@ -14,9 +14,10 @@ export default function LoginPage() {
 
   // Hide body scroll when mounted
   React.useEffect(() => {
+    const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = previousOverflow;
     };
   }, []);
 
