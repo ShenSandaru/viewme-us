@@ -75,7 +75,7 @@ export default function LoginPage() {
                 name="email"
                 label="Email"
                 type="email"
-                placeholder="amelielaurent7622@gmail.com"
+                placeholder="your.email@example.com"
                 value={formData.email}
                 onChange={handleChange}
               />
