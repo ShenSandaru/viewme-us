@@ -1,4 +1,4 @@
-import styles from '../../styles/Tours.module.css';
+import styles from '@/styles/Tours.module.css';
 
 const tours = [
   {

@@ -1,12 +1,18 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from '../../styles/Destination.module.css';
-import { destinations, Destination } from '../data/destinations';
-import SearchBar from '../../components/SearchBar';
+import styles from '@/styles/Destination.module.css';
+import { Destination } from '@/data/destinations';
+import { destinationService } from '@/services/destinationService';
+import SearchBar from '@/components/SearchBar';
 
 export default function Destinations() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [destinationsList, setDestinationsList] = useState<Destination[]>([]);
+
+  useEffect(() => {
+    destinationService.getAll().then(setDestinationsList);
+  }, []);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
@@ -16,7 +22,7 @@ export default function Destinations() {
     setSearchTerm('');
   };
 
-  const filteredDestinations = destinations.filter((dest: Destination) =>
+  const filteredDestinations = destinationsList.filter((dest: Destination) =>
     dest.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
