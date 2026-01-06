@@ -1,6 +1,5 @@
 import DestinationCard from "@/components/DestinationCard";
 import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/NavBar";
 import Header from "@/components/Header";
 
 
