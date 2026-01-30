@@ -1,4 +1,5 @@
-import { destinations, Destination } from '@/data/destinations';
+import { destinations } from '@/data/destinations';
+import { Destination } from '@/types';
 
 export const destinationService = {
   getAll: async (): Promise<Destination[]> => {

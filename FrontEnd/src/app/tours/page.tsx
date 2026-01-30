@@ -1,22 +1,5 @@
-import styles from '@/styles/Tours.module.css';
-
-const tours = [
-  {
-    title: "Beach Tour",
-    description: "Explore the rich cultural heritage of Ceylon.",
-    imageSrc: "/images/destination1.jpg",
-  },
-  {
-    title: "Adventure Tour",
-    description: "Experience thrilling adventures in the wild.",
-    imageSrc: "/images/destination2.jpg",
-  },
-  {
-    title: "Hiking Tour",
-    description: "Relax on the beautiful beaches of Ceylon.",
-    imageSrc: "/images/destination3.jpg",
-  },
-];
+import styles from './tours.module.css';
+import { tours } from '@/data/tours';
 
 export default function Tours() {
   return (

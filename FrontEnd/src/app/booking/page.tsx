@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import styles from './Booking.module.css';
+import styles from './booking.module.css';
 
 export default function Booking() {
   const [formData, setFormData] = useState({

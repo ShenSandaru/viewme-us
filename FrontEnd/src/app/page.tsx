@@ -1,5 +1,4 @@
-import DestinationCard from "@/components/DestinationCard";
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/components/sections/hero/hero-section";
 
 
 export default function Home() {

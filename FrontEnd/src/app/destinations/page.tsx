@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from '@/styles/Destination.module.css';
-import { Destination } from '@/data/destinations';
+import styles from './destinations.module.css';
+import { Destination } from '@/types';
 import { destinationService } from '@/services/destinationService';
-import SearchBar from '@/components/SearchBar';
+import SearchBar from './components/search-bar';
 
 export default function Destinations() {
   const [searchTerm, setSearchTerm] = useState('');
