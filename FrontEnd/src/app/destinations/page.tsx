@@ -33,7 +33,6 @@ export default function Destinations() {
         searchTerm={searchTerm}
         handleSearch={handleSearch}
         handleReset={handleReset}
-        handleImageUpload={() => {}}
       />
 
       <div className={styles.destinationList}>

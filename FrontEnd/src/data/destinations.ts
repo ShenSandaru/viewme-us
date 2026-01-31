@@ -1,4 +1,4 @@
-import { Destination, Highlight } from '@/types';
+import { Destination } from '@/types';
 
 export const destinations: Destination[] = [
   {
