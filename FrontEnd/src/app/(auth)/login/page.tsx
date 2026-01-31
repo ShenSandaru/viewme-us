@@ -41,7 +41,7 @@ export default function LoginPage() {
           {/* Logo */}
           <div className="absolute top-8 left-8 lg:left-12 flex items-center gap-2">
             <div className="relative w-10 h-10">
-              <Image src="/images/view-me-high-resolution-logo-transparent.png" alt="View Me" fill className="object-contain" />
+              <Image src="/images/view-me-high-resolution-logo-transparent.png" alt="View Me" fill sizes="40px" className="object-contain" />
             </div>
           </div>
 
