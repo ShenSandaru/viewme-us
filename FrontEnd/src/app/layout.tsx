@@ -1,7 +1,6 @@
-import '@/styles/globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import NavBar from '@/components/NavBar';
+import './globals.css';
+import Footer from '@/components/layout/footer/footer';
+import NavBar from '@/components/layout/navbar/navbar';
 
 import { ReactNode } from 'react';
 

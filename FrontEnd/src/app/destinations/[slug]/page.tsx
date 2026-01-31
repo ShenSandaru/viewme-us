@@ -1,8 +1,8 @@
 "use client";
 import { useRouter, useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import styles from '@/styles/DestinationDetail.module.css';
-import { Destination } from '@/data/destinations';
+import styles from './destination-detail.module.css';
+import { Destination } from '@/types';
 import { destinationService } from '@/services/destinationService';
 
 export default function DestinationDetail() {
