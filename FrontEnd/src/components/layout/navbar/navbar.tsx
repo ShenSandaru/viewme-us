@@ -17,9 +17,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={`${styles.logo} ${isOpen ? styles.hidden : ''}`}>
         <Link href="/">
-
-        <Image src="/images/view-me-high-resolution-logo-transparent.png" alt="logo" width={100} height={100} />
-          
+          <Image src="/images/view-me-high-resolution-logo-transparent.png" alt="logo" width={100} height={100} />
         </Link>
       </div>
       
