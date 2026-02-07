@@ -30,20 +30,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="fixed inset-0 z-50 w-full flex items-center justify-center bg-[url('/images/UI.jpg')] bg-cover bg-center p-4 pt-20 lg:pt-28">
-      <div className="absolute inset-0 bg-black/10 backdrop-blur-sm z-0"></div>
+    <div className="fixed inset-0 z-50 w-full flex items-center justify-center bg-gradient-to-br from-emerald-50 via-green-100 to-teal-50 p-4 pt-20 lg:pt-28">
 
       <div className="w-full max-w-6xl h-full max-h-[85vh] bg-white/10 backdrop-blur-xl border border-white/20 rounded-[2.5rem] shadow-2xl overflow-hidden flex relative z-10 flex-col lg:flex-row">
 
         {/* Left Side - Form */}
         <div className="w-full lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center relative">
 
-          {/* Logo */}
-          <div className="absolute top-8 left-8 lg:left-12 flex items-center gap-2">
-            <div className="relative w-10 h-10">
-              <Image src="/images/view-me-high-resolution-logo-transparent.png" alt="View Me" fill sizes="40px" className="object-contain" />
-            </div>
-          </div>
+        
 
           <div className="max-w-md mx-auto w-full">
             <div className="mb-8 text-center lg:text-left">
