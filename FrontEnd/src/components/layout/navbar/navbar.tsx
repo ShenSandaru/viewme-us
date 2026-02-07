@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './navbar.module.css';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={`${styles.logo} ${isOpen ? styles.hidden : ''}`}>
         <Link href="/">
-          <img src="/images/view-me-high-resolution-logo-transparent.png" alt="logo" width={100} height={100} />
+          <Image src="/images/view-me-high-resolution-logo-transparent.png" alt="logo" width={100} height={100} />
         </Link>
       </div>
       
