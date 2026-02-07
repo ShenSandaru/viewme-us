@@ -1,8 +1,9 @@
 "use client";
 import { useRouter, useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import styles from '@/styles/DestinationDetail.module.css';
-import { Destination } from '@/data/destinations';
+import Image from 'next/image';
+import styles from './destination-detail.module.css';
+import { Destination } from '@/types';
 import { destinationService } from '@/services/destinationService';
 
 export default function DestinationDetail() {
@@ -29,9 +30,11 @@ export default function DestinationDetail() {
         ← Back
       </button>
       
-      <img 
+      <Image 
         src={destination.imageSrc} 
         alt={destination.title} 
+        width={1200}
+        height={800}
         className={styles.heroImage} 
       />
       

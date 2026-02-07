@@ -1,10 +1,11 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from '@/styles/Destination.module.css';
-import { Destination } from '@/data/destinations';
+import Image from 'next/image';
+import styles from './destinations.module.css';
+import { Destination } from '@/types';
 import { destinationService } from '@/services/destinationService';
-import SearchBar from '@/components/SearchBar';
+import SearchBar from './components/search-bar';
 
 export default function Destinations() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -41,9 +42,11 @@ export default function Destinations() {
           <Link key={dest.id} href={`/destinations/${dest.id}`}>
             <div className={styles.cardWrapper}>
               <div className={styles.card}>
-                <img
+                <Image
                   src={dest.imageSrc}
                   alt={dest.title}
+                  width={800}
+                  height={600}
                   className={styles.destinationImage}
                 />
                 <h2 className={styles.cardTitle}>{dest.title}</h2>

@@ -1,4 +1,5 @@
-import styles from '@/styles/About.module.css';
+import Image from 'next/image';
+import styles from './about.module.css';
 
 export default function About() {
   return (
@@ -14,9 +15,11 @@ export default function About() {
           At ViewMe-US, our mission is to provide unforgettable travel experiences that showcase the natural beauty and cultural richness of Ceylon. We are passionate about creating unique and personalized tours that cater to the diverse interests of our clients.
         </p>
         <div className={styles.imageWrapper}>
-          <img
+          <Image
             src="https://img.freepik.com/free-photo/beautiful-young-tourist-woman-with-map-old-port-liguria-italy_1303-18559.jpg"
             alt="Introduction"
+            width={800}
+            height={500}
             className={styles.image}
           />
         </div>
@@ -34,9 +37,11 @@ export default function About() {
           </div>
         </div>
         <div className={styles.imageWrapper}>
-          <img
+          <Image
             src="https://cdn.pixabay.com/photo/2020/09/24/03/50/achievement-5597527_960_720.png"
             alt="Achievements"
+            width={960}
+            height={720}
             className={styles.image}
           />
         </div>
@@ -47,9 +52,11 @@ export default function About() {
           We are committed to transparency, independence, and exceptional customer service. Our goal is to make travel planning simpler and more enjoyable for everyone.
         </p>
         <div className={styles.imageWrapper}>
-          <img
+          <Image
             src="https://cdn.pixabay.com/photo/2020/06/03/10/41/quality-5254406_640.png"
             alt="Mission"
+            width={640}
+            height={640}
             className={styles.image}
           />
         </div>

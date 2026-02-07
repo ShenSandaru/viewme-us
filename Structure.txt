@@ -1,0 +1,61 @@
+FrontEnd/src/
+├── app/
+│   ├── (auth)/                           # Route group for authentication
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   └── signup/
+│   │       └── page.tsx
+│   ├── about/
+│   │   ├── about.module.css              # Co-located CSS
+│   │   └── page.tsx
+│   ├── booking/
+│   │   ├── booking.module.css            # Co-located CSS
+│   │   └── page.tsx
+│   ├── contact/
+│   │   ├── contact.module.css            # Co-located CSS
+│   │   └── page.tsx
+│   ├── destinations/
+│   │   ├── [slug]/
+│   │   │   ├── destination-detail.module.css
+│   │   │   └── page.tsx
+│   │   ├── components/                   # Page-specific components
+│   │   │   ├── destination-card.tsx
+│   │   │   └── search-bar.tsx
+│   │   ├── destinations.module.css
+│   │   └── page.tsx
+│   ├── tours/
+│   │   ├── tours.module.css              # Co-located CSS
+│   │   └── page.tsx
+│   ├── globals.css                       # Global styles with Tailwind
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── layout/                           # Layout components
+│   │   ├── navbar/
+│   │   │   ├── navbar.tsx
+│   │   │   └── navbar.module.css
+│   │   └── footer/
+│   │       └── footer.tsx
+│   ├── ui/                               # Reusable UI components
+│   │   ├── glass-input/
+│   │   │   └── glass-input.tsx
+│   │   └── carousel/
+│   │       └── image-carousel.tsx
+│   └── sections/                         # Page sections
+│       └── hero/
+│           ├── hero-section.tsx
+│           └── hero-section.module.css
+│
+├── data/
+│   ├── destinations.ts                   # Pure data (no types)
+│   └── tours.ts                          # Tours data
+│
+├── services/
+│   └── destinationService.ts             # API service layer
+│
+├── types/
+│   └── index.ts                          # Centralized type definitions
+│
+└── lib/
+    └── utils.ts                          # Utility functions
